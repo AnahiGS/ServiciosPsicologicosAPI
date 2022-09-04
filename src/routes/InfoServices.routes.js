@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { methods as infoServicesController } from "./../controllers/infoServices.controller"
+import { methods as infoServicesController } from "./../controllers/infoServices.controller";
 
 const router = Router();
 console.log("Hola Mundo")
@@ -8,7 +8,7 @@ router.get("/allInstitutions", infoServicesController.getInfoServices); // GET h
 router.get("/:idInstitucion", infoServicesController.getById); // GET http://localhost:8000/api-restful/infoServices/:idInstitucion
 router.post("/addInstitution", infoServicesController.addInfoService); // POST http://localhost:8000/api-restful/infoServices/
 router.put("/:idInstitucion", infoServicesController.updateInfoService); // PUT http://localhost:8000/api-restful/infoServices/:idInstitucion
-//router.patch("/:idInstitucion", infoServicesController.updateInfoService); // PATCH http://localhost:8000/api-restful/infoServices/:idInstitucion
+
 router.delete("/:idInstitucion", infoServicesController.deleteInfoService);// DELETE http://localhost:8000/api-restful/infoServices/:idInstitucion
 
 
