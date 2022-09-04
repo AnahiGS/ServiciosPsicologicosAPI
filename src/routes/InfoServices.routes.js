@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { methods as infoServicesController } from "./../controllers/infoServices.controller";
+import { methods as infoServicesController } from "./../controllers/infoServices.controller.js";
 
 const router = Router();
 console.log("Hola Mundo")
