@@ -1,4 +1,4 @@
-import {getConnection} from "../commons/Connection"
+const getConnection = require ("../commons/Connection.js");
 
 const getInfoServices = async (req, res) =>{
     try{
@@ -107,12 +107,11 @@ const deleteInfoService = async (req, res) =>{
 
 
 
-export const methods = {
+module.exports = {
     getInfoServices,
     getById,
     addInfoService,
     updateInfoService,
     deleteInfoService,
    
-
 }

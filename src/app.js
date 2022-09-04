@@ -1,8 +1,7 @@
-import express from "express";
-import morgan from "morgan";
+const express = require('express');
+const morgan = require ('morgan');
 
-
-import infoServicesRoutes from "./routes/InfoServices.routes.js";
+const infoServicesRoutes = require ('./routes/InfoServices.routes.js');
 
 const app = express();
 
@@ -16,4 +15,4 @@ app.use(express.json());
 
 app.use("/api/infoServices",infoServicesRoutes);
 
-export default app;
+module.exports = app;
