@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "9ec0713d-518a-4aac-abb8-71f5e95a221f",
+		"name": "DesplegadoconHeroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21783970"
+	},
+	"item": [
+		{
+			"name": "GetAllInstitutions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/{{servicepath}}/allInstitutions",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"{{servicepath}}",
+						"allInstitutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddInstitution",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idInstitucion\": \"12\",\r\n    \"name\": \"CONAVID\",\r\n    \"modalidad\":  \"A distancia\",\r\n    \"estado\":  \"Ciudad de México\",\r\n    \"direccion\": \"kjshfjd\",\r\n    \"telefono\": \"5552098907\",\r\n    \"horario\": \"24 hrs. los 365 días\",\r\n    \"webredesSociales\": \"@CONAVIM_MX\",\r\n    \"servicio\": \"Brinda orientación legal y terapia psicológica gratuita.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/{{servicepath}}/addInstitution",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"{{servicepath}}",
+						"addInstitution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteInfoServiceById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{hostname}}/{{servicepath}}/12",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"{{servicepath}}",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/{{servicepath}}/3",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"{{servicepath}}",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateInfoServiceById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"LUNAS\",\r\n    \"modalidad\":  \"A distancia\",\r\n    \"estado\":  \"Ciudad de México\",\r\n    \"direccion\": \"-\",\r\n    \"telefono\": \"5555122836 ext 502\",\r\n    \"horario\": \"Lunes a Viernes de 9:00 a 17:00\",\r\n    \"webredesSociales\": \"https://www.semujeres.cdmx.gob.mx/lunas\",\r\n    \"servicio\": \"Ofrece apoyo a víctimas de violencia proporcionan apoyo y acompañamiento psicológico a mujeres\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/{{servicepath}}/3",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"{{servicepath}}",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
