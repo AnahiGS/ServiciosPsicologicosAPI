@@ -13,6 +13,10 @@ app.set('port',port);
 app.use(morgan("dev"));
 app.use(express.json());
 
+app.get('/', (req, res)=>{
+    res.send('Servicios psicologicos API')
+});
+
 app.use("/api/infoServices",infoServicesRoutes);
 
 module.exports = app;
