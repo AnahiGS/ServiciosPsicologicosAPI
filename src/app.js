@@ -7,7 +7,7 @@ const app = express();
 
 // const port = process.env.PORT || 5000;
 
-app.set('port',8000);
+app.set('port',3000);
 
 /*Milddwares*/
 app.use(morgan("dev"));

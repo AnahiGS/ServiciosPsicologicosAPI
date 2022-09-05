@@ -15,6 +15,4 @@ const getConnection = () =>{
     return connection
 };
 
-module.exports = {
-    getConnection
-};
+module.exports =  getConnection;
