@@ -20,7 +20,7 @@ servicesRouter.get("/:idInstitucion", getById); // GET http://localhost:8000/api
 servicesRouter.post("/addInstitution", addInfoService); // POST http://localhost:8000/api-restful/infoServices/
 servicesRouter.put("/:idInstitucion", updateInfoService); // PUT http://localhost:8000/api-restful/infoServices/:idInstitucion
 
-servicesRouter. delete("/:idInstitucion", deleteInfoService);// DELETE http://localhost:8000/api-restful/infoServices/:idInstitucion
+servicesRouter.delete("/:idInstitucion", deleteInfoService);// DELETE http://localhost:8000/api-restful/infoServices/:idInstitucion
 
 
 module.exports = servicesRouter;

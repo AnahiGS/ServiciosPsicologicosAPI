@@ -26,7 +26,7 @@ const getById = async (req, res) =>{
 const addInfoService = async (req, res) =>{
     try{
         const { idInstitucion, name, modalidad, estado, direccion, telefono, horario, webredesSociales, servicio } = req.body;
-        if (idInstitucion === null ){
+        if (idInstitucion === undefined ){
           return res.status(400).json({message:"Bad Request. Please fill all field."})
             
         }
