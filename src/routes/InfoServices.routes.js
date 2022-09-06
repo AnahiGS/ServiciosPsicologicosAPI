@@ -15,12 +15,12 @@ const{
 
 
 /* A router that is used to create the routes for the API. */
-servicesRouter.get("/allInstitutions",getInfoServices); // GET http://localhost:8000/api-restful/infoServices/
-servicesRouter.get("/:idInstitucion", getById); // GET http://localhost:8000/api-restful/infoServices/:idInstitucion
-servicesRouter.post("/addInstitution", addInfoService); // POST http://localhost:8000/api-restful/infoServices/
-servicesRouter.put("/:idInstitucion", updateInfoService); // PUT http://localhost:8000/api-restful/infoServices/:idInstitucion
+servicesRouter.get("/allInstitutions",getInfoServices); // GET http://localhost:5000/api/infoServices/allInstutitions
+servicesRouter.get("/:idInstitucion", getById); // GET http://localhost:5000/api/infoServices/:idInstitucion
+servicesRouter.post("/addInstitution", addInfoService); // POST http://localhost:localhost:5000/api/infoServices/addInstitution
+servicesRouter.put("/:idInstitucion", updateInfoService); // PUT http://localhost:5000/api/infoServices/:idInstitucion
 
-servicesRouter.delete("/:idInstitucion", deleteInfoService);// DELETE http://localhost:8000/api-restful/infoServices/:idInstitucion
+servicesRouter.delete("/:idInstitucion", deleteInfoService);// DELETE http://localhost:5000/api/infoServices/:idInstitucion
 
 
 module.exports = servicesRouter;
