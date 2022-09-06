@@ -97,17 +97,17 @@ servicesRouter.get("/:idInstitucion", getById); // GET http://localhost:5000/api
 //get a institution
 /**
  * @swagger
- * /api/InfoServices/{idInstitution}:
+ * /api/InfoServices/{idInstitucion}:
  *  get:
  *      summary: return a institution
  *      tags: [Institution]
  *      parameters:
- *          -in: path
- *          name: idInstitution
- *          schema:
+ *          - in: path
+ *            name: idInstitucion
+ *            schema:
  *              type: string
- *          required: true
- *          description: the institution id             
+ *            required: true
+ *            description: the institution id             
  *      responses:
  *          200:
  *              description: returned a institution!
@@ -116,8 +116,8 @@ servicesRouter.get("/:idInstitucion", getById); // GET http://localhost:5000/api
  *                      schema:
  *                          type: object
  *                          $ref: '#/components/schemas/Institution' 
- *      404:
- *          description: user not found
+ *          404:
+ *              description: user not found
  */
 
 servicesRouter.post("/addInstitution", addInfoService); // POST http://localhost:localhost:5000/api/infoServices/addInstitution
@@ -144,17 +144,17 @@ servicesRouter.put("/:idInstitucion", updateInfoService); // PUT http://localhos
 //update a institution
 /**
  * @swagger
- * /api/InfoServices/{idInstitution}:
+ * /api/InfoServices/{idInstitucion}:
  *  put:
  *      summary: update a institution
  *      tags: [Institution]
  *      parameters:
- *          -in: path
- *          name: idInstitution
- *          schema:
+ *          - in: path
+ *            name: idInstitucion
+ *            schema:
  *              type: string
- *          required: true
- *          description: the institution id    
+ *            required: true
+ *            description: the institution id     
  *      requestBody:
  *          required: true
  *          content:
@@ -173,17 +173,17 @@ servicesRouter.delete("/:idInstitucion", deleteInfoService);// DELETE http://loc
 //delete a institution
 /**
  * @swagger
- * /api/InfoServices/{idInstitution}:
+ * /api/InfoServices/{idInstitucion}:
  *  delete:
  *      summary: delete a institution
  *      tags: [Institution]
  *      parameters:
- *          -in: path
- *          name: idInstitution
- *          schema:
+ *          - in: path
+ *            name: idInstitucion
+ *            schema:
  *              type: string
- *          required: true
- *          description: the institution id             
+ *            required: true
+ *            description: the institution id             
  *      responses:
  *          200:
  *              description: user deleted
