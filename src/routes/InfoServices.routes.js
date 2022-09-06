@@ -161,7 +161,50 @@ servicesRouter.put("/:idInstitucion", updateInfoService); // PUT http://localhos
  *              application/json:
  *                  schema:
  *                      type: object
- *                      $ref: '#/components/schemas/Institution'          
+ *                      properties:
+ *                          name: 
+ *                              type: string
+ *                              description: Nombre de la institución o servicio.
+ *                          modalidad: 
+ *                              type: string
+ *                              description: Modalidad a distancia presencial o en línea.
+ *                          estado: 
+ *                              type: string
+ *                              description: Estado en el que se ubica.
+ *                          direccion: 
+ *                              type: string
+ *                              description: En caso de ser un servicio presencial.
+ *                          telefono: 
+ *                              type: string
+ *                              description: Número al que puede llamar el usuario.
+ *                          horario: 
+ *                              type: string
+ *                              description: Días y horario de atención.
+ *                          webredesSociales: 
+ *                              type: string
+ *                              description: URL de página web o redes sociales.
+ *                          servicio:
+ *                              type: string
+ *                              description: Descripción del servicio que se brinda.
+ *                      required: 
+ *                          -idInstitucion
+ *                          -name
+ *                          -modalidad
+ *                          -estado
+ *                          -direccion
+ *                          -telefono
+ *                          -horario
+ *                          -webredesSociales
+ *                          -servicio
+ *                      example:          
+ *                          name: LUNAS
+ *                          modalidad:  A distancia
+ *                          estado:  Ciudad de México
+ *                          direccion: varios
+ *                          telefono: 5555122836 ext 502
+ *                          horario: Lunes a Viernes de 9:00 a 17:00
+ *                          webredesSociales: https://www.semujeres.cdmx.gob.mx/lunas
+ *                          servicio: Ofrece apoyo a víctimas de violencia proporcionan apoyo y acompañamiento psicológico a mujeres.         
  *      responses:
  *          200:
  *              description: user updated! 
