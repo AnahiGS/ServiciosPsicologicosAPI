@@ -4,7 +4,6 @@ Permite agregar, editar, eliminar y obtener la lista de servicios, u obtener un 
 
 A continuación se describirán los métodos para realizar las peticiones anteriores:
 
-
 GET
 
 * Se pueden obtener los datos de todos los servicios con la siguiente URL:
@@ -20,11 +19,12 @@ POST
   1. idInstitucion: Posición en la lista.
   2. name: Nombre de la institución o servicio.
   3. modalidad: Modalidad a distancia, presencial o en línea.
-  4. direccion: En caso de ser un servicio presencial.
-  5. telefono: Número al que puede llamar el usuario.
-  6. horario: Días y hora de atención.
-  7. webredesSociales: URL de página web o redes sociales.
-  8. servicio: Descripción del servicio que se brinda.
+  4. estado: Estado en el que se ubica.
+  5. direccion: En caso de ser un servicio presencial.
+  6. telefono: Número al que puede llamar el usuario.
+  7. horario: Días y hora de atención.
+  8. webredesSociales: URL de página web o redes sociales.
+  9. servicio: Descripción del servicio que se brinda.
 
 PUT
 
