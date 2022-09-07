@@ -36,3 +36,8 @@ DELETE
 
 * Para eliminar un servicio se deberá agregar el id de éste:
   **https://serviciospsicologicosapi.herokuapp.com/api/infoServices/****:idInstitucion**
+
+
+Link para visualización en swagger:
+
+http://localhost:5000/api-doc

@@ -59,6 +59,7 @@ const updateInfoService = async (req, res) =>{
            return res.status(400).json({message:"Bad Request. Please fill all field."})
         }
         const connection = await getConnection();
+        /* Logging the connection to the console. */
         console.log(connection);
         const result = await connection.query("UPDATE InfoServices SET `name`= ?,`modalidad`=?,`estado`=?,`direccion`=?, `telefono`=?, `horario`=?, `webredesSociales`=?, `servicio`=? WHERE idInstitucion= ?", [ name, modalidad, estado, direccion, telefono, horario, webredesSociales, servicio, parseInt(idInstitucion)]);
         console.log(result);

@@ -1,3 +1,4 @@
+/* Importing the app.js file. */
 const app = require ("./app.js")
 
 const main = () =>{
